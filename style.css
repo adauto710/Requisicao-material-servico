@@ -1,0 +1,194 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f9fc;
+    margin: 40px;
+}
+
+/* Estilos de Cabeçalho */
+h1 {
+    text-align: center;
+    color: #003366;
+}
+
+h2 {
+    text-align: center;
+    color: #005CA9;
+    margin-bottom: 10px;
+}
+
+/* Estilos de Formulário */
+.form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.form-field {
+    margin-right: 10px;
+}
+
+.form-input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-name {
+    width: 250px;
+}
+
+.input-phone {
+    width: 150px;
+}
+
+/* Estilos da Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #005CA9;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input, textarea {
+    width: 100%;
+    border: none;
+    background: transparent;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Estilo específico para o campo de descrição e observações */
+.descricao-material,
+.observacoes {
+    min-height: 30px;
+    height: auto;
+    resize: vertical;
+    overflow: auto;
+    text-align: left;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+
+tfoot td {
+    font-weight: bold;
+    background-color: #e6f0ff;
+}
+
+/* Estilos dos Botões */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #005CA9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #003f73;
+}
+
+.btn-print {
+    background-color: #28a745;
+}
+
+/* Estilo da área de assinatura */
+.signature-area {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+.signature-line {
+    display: inline-block;
+    width: 300px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.signature-name {
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Estilos para Impressão */
+@media print {
+    body {
+        background-color: white;
+        margin: 0;
+    }
+
+    .no-print {
+        display: none !important;
+    }
+
+    button {
+        display: none !important;
+    }
+
+    table {
+        box-shadow: none !important;
+    }
+
+    input {
+        border: none !important;
+    }
+
+    .signature-area {
+        margin-top: 30px;
+    }
+
+    .copyright-footer {
+        margin-top: 30px;
+        display: none;
+    }
+}
+
+/* Estilo do rodapé de copyright */
+.copyright-footer {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    color: #666;
+    font-size: 0.9em;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.copyright-footer .created-by {
+    color: #005CA9;
+    font-weight: 500;
+}
